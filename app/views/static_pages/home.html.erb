@@ -1,8 +1,57 @@
 <% provide(:title, 'Home') %>
-<div class="center hero-unit">
-	<h1>Welcome to Sometimes My Boyfriend Cooks!</h1>
-	<h2>
-    	This is the home page for the upcoming tasty delicious blog!
-  	</h2>
-  	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+    	<%=image_tag("ds_01.jpg", alt: "Hong Kong") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Welcome to Sometimes My Boyfriend Cooks!</h1>
+          <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+    	<%= image_tag("ds_02_web.jpg", alt: "Subway") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>A Little Bit About Us...</h1>
+          <p class="lead">Andy Duong is the head chef of everything delicious. He is often found making savory dishes or baking away at amazing desserts!</p>
+          <%= link_to "Learn More!",   about_path, class: "btn btn-large btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="featurette">
+	<%=image_tag("food1.jpg", alt: "Food One", class: "featurette-image pull-right") %>
+<h2 class="featurette-heading">Chicken!</h2>
+<p class="lead">I made this fantastic 24 hour marinated chicken last week for some delicious tacos. Recipe is super easy to follow and fun for the summer!</p>
 </div>
+
+<hr class="featurette-divider">
+
+<div class="featurette">
+	<%=image_tag("food4.jpg", alt: "Food Four", class: "featurette-image pull-left") %>
+<h2 class="featurette-heading">Apple Crumble Pie Galore!</h2>
+<p class="lead">This Apple Crumble Pie is delicious for summer picnics and will be a recipe worth keeping around in the fall!</p>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="featurette">
+	<%=image_tag("food3.jpg", alt: "Food Three", class: "featurette-image pull-right") %>
+<h2 class="featurette-heading">Can't Go Wrong With Bacon!</h2>
+<p class="lead">What's not to love about a bacon latticed macaroni and cheese? This is a sure fire way to get the inlaws talking!</p>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->
