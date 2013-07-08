@@ -1,8 +1,22 @@
 <% provide(:title, 'About Us') %>
-<h1>About Us</h1>
-<p>
-  Andy, super awesome adorable cook, is the master of the kitchen. Basically everything is his specialty.
-</p>
-<p>
-	Dylan, somewhat sweet, is the master of consuming everything that Andy makes while in the kitchen! And most of the time its super tasty... 
-</p>
+<div id = "about" class = "span10 offset1">
+	<h1>About Us</h1>
+	<div class = "span4 aboutinfo">
+		<div class = "thumbnail">
+			<%=image_tag("andy.jpg", alt: "Andy", class: "img-polaroid") %>
+			<h3>Andy</h3>
+			<p>
+			  Andy, super awesome adorable cook, is the master of the kitchen. Basically everything is his specialty.
+			</p>
+		</div>
+	</div>
+	<div class = "span4 offset1 aboutinfo">
+		<div class = "thumbnail">
+			<%=image_tag("dylan.jpg", alt: "Dylan", class: "img-polaroid") %>
+			<h3>Dylan</h3>
+			<p class = "">
+				Dylan, somewhat sweet, is the master of consuming everything that Andy makes while in the kitchen! And most of the time its super tasty... 
+			</p>
+		</div>
+	</div>
+</div>
